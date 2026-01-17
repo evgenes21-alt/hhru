@@ -11,8 +11,3 @@ def filter_vacancies(vacancies: List[Vacancy], keywords: List[str]) -> List[Vaca
         if any(keyword.lower() in (v.description.lower() if v.description else "") for keyword in keywords)
     ]
 
-# def filter_vacancies(vacancies: List[Vacancy], keywords: List[str]) -> List[Vacancy]:
-#     return [
-#         v for v in vacancies
-#         if any(keyword.lower() in v.description.lower() for keyword in keywords)
-#     ]
