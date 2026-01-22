@@ -1,5 +1,7 @@
 import unittest
+
 from src.base_api import BaseAPI
+
 
 class TestBaseAPI(unittest.TestCase):
     def test_base_api_creation(self):
@@ -10,8 +12,6 @@ class TestBaseAPI(unittest.TestCase):
     def test_subclassing(self):
         # Создадим фиктивный класс-наследник
         class MyAPI(BaseAPI):
-            def connect(self):
-                pass
             def fetch_data(self, keyword):
                 pass
         # Проверим, что теперь класс можно создать
